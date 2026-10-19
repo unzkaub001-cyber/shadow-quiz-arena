@@ -1,27 +1,10 @@
-# Shadow Quiz Arena — iPhone PWA
+Shadow Quiz Arena - Mobile Prototype
 
-ไฟล์ชุดนี้เป็นต้นแบบเว็บแอปที่เตรียมสำหรับเพิ่มลงหน้าจอโฮม iPhone (PWA) แล้ว ยังไม่ได้เผยแพร่เป็นเว็บไซต์สาธารณะหรือ App Store
+ไฟล์ใน ZIP:
+- index.html: เกมหลัก
+- manifest.webmanifest: ค่าติดตั้งเว็บ
+- sw.js: Service Worker/แคช
 
-## วิธีเปิดใช้งานจริงบน iPhone
-PWA ต้องโฮสต์ผ่าน HTTPS ก่อนจึงจะใช้งาน Service Worker และติดตั้งได้ครบ
+วิธีอัปเดต: แตก ZIP แล้วอัปโหลดไฟล์ไปยัง root ของ GitHub Repository เดิม จากนั้น Commit changes และเปิด GitHub Pages
 
-### วิธีที่ง่าย: GitHub Pages
-1. ดาวน์โหลดและแตกไฟล์ ZIP นี้
-2. สร้าง repository ใหม่บน GitHub
-3. อัปโหลดไฟล์ทั้งหมดในโฟลเดอร์นี้ โดยให้ `index.html` อยู่ที่รากของ repository
-4. เปิด Settings → Pages แล้วเลือก deploy จาก branch หลักและโฟลเดอร์ root
-5. รอให้ GitHub สร้าง URL เว็บไซต์ HTTPS ให้
-6. เปิด URL นั้นใน Safari บน iPhone
-7. กดปุ่ม Share → Add to Home Screen → Add
-
-## สิ่งที่มีในต้นแบบ
-- เกมตอบคำถามภาษาไทยแบบเล่นคนเดียว
-- ตอบถูกสะสมมานา แล้วเลือกสกิลโจมตี/วางกับดัก/รักษา/สแกนจุดอ่อน
-- ตอบผิดศัตรู AI จะโจมตีกลับ
-- เอฟเฟกต์เวทมนตร์และหน้าจอที่ปรับตามมือถือ
-- manifest, ไอคอนแอป และ service worker สำหรับแคชไฟล์เกม
-
-## ข้อจำกัด
-- ยังไม่ใช่แอป native ที่ลงผ่าน App Store
-- ยังไม่มีบัญชีผู้เล่น, cloud save, multiplayer หรือระบบซื้อภายในแอป
-- ทดสอบต้นแบบบน Safari หลังโฮสต์แล้วก่อนส่งให้ผู้ใช้จริง
+หมายเหตุ: เวอร์ชันนี้เป็นเกมเล่นคนเดียวกับ AI ยังไม่มี multiplayer online หรือห้องเชิญเพื่อน 1v1/2v2
